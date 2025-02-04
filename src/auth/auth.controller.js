@@ -5,14 +5,11 @@ import { generarJWT } from "../helpers/generate-jwt.js";
 export const login = async (req, res) =>{
     const { email, password, username } = req.body;
     try {
-        
-        const lowerEmail = email ? email.toLowerCase() : null;
-        const loweUserName = username ? username.toLowerCase() : null;
-        
+
         const user = await Usuario.findOne({
             $or: [
-                { email: lowerEmail },
-                { username: loweUserName }
+                { email },
+                { username }
             ]
         })
         if (!user) {
@@ -26,6 +23,7 @@ export const login = async (req, res) =>{
                 msg: 'El usuario no existe en la base de datos'
             })
         }
+        
         
         const validPassword =await verify(password, user.password);
         
