@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "67a3c782a4c863aaaa3c503b"
+  },
+  "name": "Max",
+  "description": "Pastor Aleman",
+  "age": 10,
+  "type": "PERRO",
+  "keeper": {
+    "$oid": "67a3c6c7f80bd242ba89b897"
+  },
+  "status": false,
+  "createdAt": {
+    "$date": "2025-02-05T20:18:10.578Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-05T22:16:37.216Z"
+  }
+}]

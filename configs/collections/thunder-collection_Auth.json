@@ -1,0 +1,57 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Auth",
+    "collectionId": "9ac61517-ad41-4fab-adc5-6a54c5123b9e",
+    "dateExported": "2025-02-05T22:46:28.820Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "51728f30-21be-4546-becf-5e2790d2431a",
+            "colId": "9ac61517-ad41-4fab-adc5-6a54c5123b9e",
+            "containerId": "",
+            "name": "Register",
+            "url": "http://localhost:3001/adoptionSystem/v1/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-01-29T19:04:04.332Z",
+            "modified": "2025-02-05T20:00:56.731Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Cesar\",\n  \"surname\": \"Gomez\",\n  \"username\":\"Cgomez\",\n  \"email\":\"cgomez@gmail.com\",\n  \"password\":\"12345678\",\n  \"profilePicture\":\"\",\n  \"phone\":\"51604553\",\n  \"role\":\"ADMIN_ROLE\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0be467aa-2107-4d8a-81af-eaeb534858e5",
+            "colId": "9ac61517-ad41-4fab-adc5-6a54c5123b9e",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3001/adoptionSystem/v1/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-02-05T19:57:47.283Z",
+            "modified": "2025-02-05T20:01:04.919Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"cgomez@gmail.com\",\n  \"password\": \"12345678\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "135b50bd-a05d-48f5-b469-072f410bb5b9",
+            "colId": "9ac61517-ad41-4fab-adc5-6a54c5123b9e",
+            "containerId": "",
+            "name": "view",
+            "url": "http://localhost:3001/adoptionSystem/v1/users",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-02-05T20:03:16.490Z",
+            "modified": "2025-02-05T20:03:34.077Z",
+            "headers": []
+        }
+    ],
+    "ref": "b32b6n76X8Q2poCW8TDPEl98e6zU8GT59cEssmc26bBfXiY-MS4tc3Y6h1mqpZoTjToHUgasx5JiwD-lvwp2Ng"
+}
