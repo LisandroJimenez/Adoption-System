@@ -5,7 +5,7 @@ import Usuario from './user.model.js'
 export const getUsers = async (req = request, res = response) => {  
     try {
         const {limite = 10, desde = 0 } = req.query;
-        const query = {estado: true}
+        const query = {state: true}
         const [total, users] = await Promise.all([
             Usuario.countDocuments(query),
             Usuario.find(query)
@@ -79,7 +79,7 @@ export const updateUser = async (req , res = response) => {
 export const deleteUser = async (req, res) => {
     try {
         const { id } = req.params;
-        const user = await Usuario.findByIdAndUpdate( id, {estado: false}, { new: true});
+        const user = await Usuario.findByIdAndUpdate( id, {state: false}, { new: true});
         const autheticatedUser = req.user;
         res.status(200).json({
             succes: true,

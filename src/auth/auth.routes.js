@@ -9,7 +9,6 @@ const router = Router();
 router.post(
     '/login',
     loginValidator,
-    deleteFileOnError,
     login
 );
 
