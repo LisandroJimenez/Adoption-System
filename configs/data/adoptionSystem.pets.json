@@ -16,4 +16,118 @@
   "updatedAt": {
     "$date": "2025-02-05T22:16:37.216Z"
   }
+},
+{
+  "_id": {
+    "$oid": "67aac6fd6a97f8bf522e3c86"
+  },
+  "name": "Toby",
+  "description": "Perro Salchicha",
+  "age": 2,
+  "type": "PERRO",
+  "keeper": {
+    "$oid": "67aac5936a97f8bf522e3c81"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-11T03:41:49.513Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-11T03:41:49.513Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67aac9222cd1fbfc6fe1d5a7"
+  },
+  "name": "Luna",
+  "description": "Chihuahua",
+  "age": 4,
+  "type": "PERRO",
+  "keeper": {
+    "$oid": "67a3c6c7f80bd242ba89b897"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-11T03:50:58.381Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-11T03:50:58.381Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67aac92d2cd1fbfc6fe1d5aa"
+  },
+  "name": "Bolt",
+  "description": "Chihuahua",
+  "age": 4,
+  "type": "PERRO",
+  "keeper": {
+    "$oid": "67a3c6c7f80bd242ba89b897"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-11T03:51:09.386Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-11T04:14:11.366Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67aac9342cd1fbfc6fe1d5ad"
+  },
+  "name": "pana",
+  "description": "Chihuahua",
+  "age": 4,
+  "type": "PERRO",
+  "keeper": {
+    "$oid": "67a3c6c7f80bd242ba89b897"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-11T03:51:16.046Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-11T04:16:09.047Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67aac9aa1bdc0463ab458ae5"
+  },
+  "name": "Pedro",
+  "description": "Chihuahua",
+  "age": 4,
+  "type": "PERRO",
+  "keeper": {
+    "$oid": "67a3c6c7f80bd242ba89b897"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-11T03:53:14.640Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-11T04:23:24.015Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67aacc5d4d01ab787ace5bf4"
+  },
+  "name": "Saulito",
+  "description": "Chihuahua",
+  "age": 4,
+  "type": "PERRO",
+  "keeper": {
+    "$oid": "67aacc2a4d01ab787ace5bee"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-11T04:04:45.943Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-11T04:23:46.682Z"
+  }
 }]
