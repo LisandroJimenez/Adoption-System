@@ -4,27 +4,28 @@ import Pet from "../pet/pet.model.js";
 
 export const getAppointment = async (req, res) => {
     try {
-        const {limite = 10, desde = 0} = req.body;
-        const query = {state: true};
+        const { limite = 10, desde = 0 } = req.body;
         const [total, appointments] = await Promise.all([
-            Appointment.countDocuments(query),
-            Appointment.find(query)
+            Appointment.countDocuments(),  
+            Appointment.find()             
                 .skip(Number(desde))
                 .limit(Number(limite))
-        ])
+        ]);
         res.status(200).json({
             success: true,
             total,
             appointments
-        })
+        });
     } catch (error) {
+        console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error al obtener usuarios",
+            msg: "Error al obtener citas",
             error
-        })
+        });
     }
-}
+};
+
 
 export const createAppointment = async (req, res) => {
     try {
